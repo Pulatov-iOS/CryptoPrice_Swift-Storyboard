@@ -18,9 +18,10 @@ struct Cryptocurrency: Codable {
     let dataTradeStart: String?
     let dataTradeEnd: String?
     let dataSymbolsCount: Int?
-    let volume1hrsUsd: Int?
-    let volume1dayUsd: Int?
-    let volume1mthUsd: Int?
+    let volume1hrsUsd: Double?
+    let volume1dayUsd: Double?
+    let volume1mthUsd: Double?
+    let price_usd: Double?
     let dataStart: String?
     let dataEnd: String?
 }

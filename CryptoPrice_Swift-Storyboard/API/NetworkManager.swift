@@ -8,6 +8,7 @@
 import Alamofire
 
 final class NetworkManager {
+    
     static let instance = NetworkManager()
     
     private init() { }
@@ -21,7 +22,7 @@ final class NetworkManager {
     }
     
     let header: HTTPHeaders = [
-        "X-CoinAPI-Key": "",
+        "X-CoinAPI-Key": "", Key
         "Accept": "application/json"
     ]
     

@@ -12,20 +12,23 @@ final class XibCryptoPriceTableViewCell: UITableViewCell {
     // MARK: - @IBOutlet
     @IBOutlet private weak var cryptoNameLabel: UILabel!
     @IBOutlet private weak var cryptoPriceLabel: UILabel!
+    @IBOutlet private weak var cellMainView: UIView!
     
+    // MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        cellMainView.layer.cornerRadius = 8
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
+    // MARK: - Helpers
     func setInformation(cryptocurrency: Cryptocurrency) {
         cryptoNameLabel.text = cryptocurrency.name
+        
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 3
+        formatter.maximumFractionDigits = 3
+        if let formattedNumber = formatter.string(from: NSNumber(value: cryptocurrency.price_usd ?? 0)) {
+            cryptoPriceLabel.text = "$\(formattedNumber)"
+        }
     }
-    
 }

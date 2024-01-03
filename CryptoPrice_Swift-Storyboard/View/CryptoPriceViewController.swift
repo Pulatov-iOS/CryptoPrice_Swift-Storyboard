@@ -66,6 +66,22 @@ extension CryptoPriceViewController: UITableViewDelegate, UITableViewDataSource 
         return cryptocurrencies.count
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 50))
+        let label = UILabel(frame: CGRect(x: 15, y: 28, width: tableView.frame.width - 20, height: 40))
+        label.text = "Exhange Rates"
+        label.textColor = UIColor.white
+        label.font = .systemFont(ofSize: 36, weight: .bold)
+        headerView.addSubview(label)
+        headerView.backgroundColor = UIColor(red: 20/255, green: 18/255, blue: 29/255, alpha: 1.0)
+        
+        return headerView
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "XibCryptoPriceTableViewCell", for: indexPath) as? XibCryptoPriceTableViewCell {
             let cryptocurrency = cryptocurrencies[indexPath.row]
