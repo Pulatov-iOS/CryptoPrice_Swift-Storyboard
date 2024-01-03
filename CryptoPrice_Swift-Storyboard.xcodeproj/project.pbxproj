@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		115002EB2B4594830044F47C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115002EA2B4594830044F47C /* AppDelegate.swift */; };
 		115002ED2B4594830044F47C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115002EC2B4594830044F47C /* SceneDelegate.swift */; };
-		115002EF2B4594830044F47C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115002EE2B4594830044F47C /* ViewController.swift */; };
+		115002EF2B4594830044F47C /* CryptoPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115002EE2B4594830044F47C /* CryptoPriceViewController.swift */; };
 		115002F22B4594830044F47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115002F02B4594830044F47C /* Main.storyboard */; };
 		115002F42B4594850044F47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115002F32B4594850044F47C /* Assets.xcassets */; };
 		115002F72B4594850044F47C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115002F52B4594850044F47C /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		115002E72B4594830044F47C /* CryptoPrice_Swift-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoPrice_Swift-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		115002EA2B4594830044F47C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115002EC2B4594830044F47C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		115002EE2B4594830044F47C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		115002EE2B4594830044F47C /* CryptoPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPriceViewController.swift; sourceTree = "<group>"; };
 		115002F12B4594830044F47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		115002F32B4594850044F47C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115002F62B4594850044F47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		115003002B4594A40044F47C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				115002EE2B4594830044F47C /* ViewController.swift */,
+				115002EE2B4594830044F47C /* CryptoPriceViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115002EF2B4594830044F47C /* ViewController.swift in Sources */,
+				115002EF2B4594830044F47C /* CryptoPriceViewController.swift in Sources */,
 				115002EB2B4594830044F47C /* AppDelegate.swift in Sources */,
 				115002ED2B4594830044F47C /* SceneDelegate.swift in Sources */,
 			);
