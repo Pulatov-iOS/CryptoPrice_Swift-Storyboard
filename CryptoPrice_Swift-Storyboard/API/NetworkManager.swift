@@ -25,13 +25,13 @@ final class NetworkManager {
         "Accept": "application/json"
     ]
     
-    func getCryptoPrice() {
+    func getCryptoPrice(completion: @escaping(Result<[Cryptocurrency], Error>) -> Void) {
         AF.request(Constants.coinBaseURL + EndPoints.assets, headers: header).responseDecodable(of: [Cryptocurrency].self) { response in
             switch response.result {
-            case .success(let success):
-                print(success)
+            case .success(let cryptocurrencies):
+                completion(.success(cryptocurrencies))
             case .failure(let failure):
-                print(failure)
+                completion(.failure(failure))
             }
         }
     }
