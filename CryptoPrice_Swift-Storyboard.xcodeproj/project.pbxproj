@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		115002EB2B4594830044F47C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115002EA2B4594830044F47C /* AppDelegate.swift */; };
 		115002ED2B4594830044F47C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115002EC2B4594830044F47C /* SceneDelegate.swift */; };
-		115002EF2B4594830044F47C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115002EE2B4594830044F47C /* ViewController.swift */; };
+		115002EF2B4594830044F47C /* CryptoPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115002EE2B4594830044F47C /* CryptoPriceViewController.swift */; };
 		115002F22B4594830044F47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115002F02B4594830044F47C /* Main.storyboard */; };
 		115002F42B4594850044F47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115002F32B4594850044F47C /* Assets.xcassets */; };
 		115002F72B4594850044F47C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115002F52B4594850044F47C /* LaunchScreen.storyboard */; };
+		115003022B4597810044F47C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115003012B4597810044F47C /* NetworkManager.swift */; };
+		115003052B4598230044F47C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 115003042B4598230044F47C /* Alamofire */; };
+		115003072B459B2D0044F47C /* Cryptocurrency .swift in Sources */ = {isa = PBXBuildFile; fileRef = 115003062B459B2D0044F47C /* Cryptocurrency .swift */; };
+		1150030A2B459DF40044F47C /* XibCryptoPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115003082B459DF40044F47C /* XibCryptoPriceTableViewCell.swift */; };
+		1150030B2B459DF40044F47C /* XibCryptoPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115003092B459DF40044F47C /* XibCryptoPriceTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		115002E72B4594830044F47C /* CryptoPrice_Swift-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoPrice_Swift-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		115002EA2B4594830044F47C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115002EC2B4594830044F47C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		115002EE2B4594830044F47C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		115002EE2B4594830044F47C /* CryptoPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPriceViewController.swift; sourceTree = "<group>"; };
 		115002F12B4594830044F47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		115002F32B4594850044F47C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115002F62B4594850044F47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115002F82B4594850044F47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115003012B4597810044F47C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		115003062B459B2D0044F47C /* Cryptocurrency .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cryptocurrency .swift"; sourceTree = "<group>"; };
+		115003082B459DF40044F47C /* XibCryptoPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCryptoPriceTableViewCell.swift; sourceTree = "<group>"; };
+		115003092B459DF40044F47C /* XibCryptoPriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibCryptoPriceTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115003052B4598230044F47C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +82,7 @@
 		115002FE2B45948F0044F47C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				115003062B459B2D0044F47C /* Cryptocurrency .swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +90,7 @@
 		115002FF2B45949C0044F47C /* API */ = {
 			isa = PBXGroup;
 			children = (
+				115003012B4597810044F47C /* NetworkManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -86,7 +98,9 @@
 		115003002B4594A40044F47C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				115002EE2B4594830044F47C /* ViewController.swift */,
+				115002EE2B4594830044F47C /* CryptoPriceViewController.swift */,
+				115003082B459DF40044F47C /* XibCryptoPriceTableViewCell.swift */,
+				115003092B459DF40044F47C /* XibCryptoPriceTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +121,9 @@
 			dependencies = (
 			);
 			name = "CryptoPrice_Swift-Storyboard";
+			packageProductDependencies = (
+				115003042B4598230044F47C /* Alamofire */,
+			);
 			productName = "CryptoPrice_Swift-Storyboard";
 			productReference = 115002E72B4594830044F47C /* CryptoPrice_Swift-Storyboard.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 115002DE2B4594830044F47C;
+			packageReferences = (
+				115003032B4598230044F47C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 115002E82B4594830044F47C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,6 +171,7 @@
 			files = (
 				115002F72B4594850044F47C /* LaunchScreen.storyboard in Resources */,
 				115002F42B4594850044F47C /* Assets.xcassets in Resources */,
+				1150030B2B459DF40044F47C /* XibCryptoPriceTableViewCell.xib in Resources */,
 				115002F22B4594830044F47C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115002EF2B4594830044F47C /* ViewController.swift in Sources */,
+				115003022B4597810044F47C /* NetworkManager.swift in Sources */,
+				115003072B459B2D0044F47C /* Cryptocurrency .swift in Sources */,
+				1150030A2B459DF40044F47C /* XibCryptoPriceTableViewCell.swift in Sources */,
+				115002EF2B4594830044F47C /* CryptoPriceViewController.swift in Sources */,
 				115002EB2B4594830044F47C /* AppDelegate.swift in Sources */,
 				115002ED2B4594830044F47C /* SceneDelegate.swift in Sources */,
 			);
@@ -387,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		115003032B4598230044F47C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		115003042B4598230044F47C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 115003032B4598230044F47C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 115002DF2B4594830044F47C /* Project object */;
 }
